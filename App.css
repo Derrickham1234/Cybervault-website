@@ -1,0 +1,225 @@
+/* GENERAL SETTINGS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #071b35;
+  color: white;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  color: #00c2ff;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00c2ff;
+}
+
+/* MAIN CONTENT */
+
+main {
+  min-height: 70vh;
+}
+
+section {
+  padding: 35px 8%;
+}
+
+section h2 {
+  color: #071b35;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #00c2ff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* PAGE INTRODUCTION */
+
+.home-page > section:first-child,
+.about-page > section:first-child,
+.services-page > section:first-child,
+.registration-page > section:first-child,
+.gallery-page > section:first-child,
+.contact-page > section:first-child {
+  background-color: #071b35;
+  color: white;
+  text-align: center;
+}
+
+.home-page > section:first-child h1,
+.about-page > section:first-child h1,
+.services-page > section:first-child h1,
+.registration-page > section:first-child h1,
+.gallery-page > section:first-child h1,
+.contact-page > section:first-child h1 {
+  color: #00c2ff;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* SERVICES */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* FORMS */
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+/* GALLERY */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item h3 {
+  padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #071b35;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer h3 {
+  color: #00c2ff;
+  margin-bottom: 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .services-container,
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  section {
+    padding: 25px 5%;
+  }
+
+}
